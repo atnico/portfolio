@@ -28,20 +28,20 @@
 /* GLOBAL
 ====================================================================== */
 
-html{
+html {
     background-color: #fff;
 
 }
 
-h1{
+h1 {
     font-family: "lato";
     font-weight: bold;
     color: #eee;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 45px;
 }
 
-h2{
+h2 {
     font-family: lato;
     font-size: 40px;
     color: rgb(0, 170, 255);
@@ -50,7 +50,7 @@ h2{
     padding: 40px;
 }
 
-h3{
+h3 {
     font-family: lato;
     font-weight: bold;
     color: #009dff;
@@ -60,7 +60,7 @@ h3{
     margin-bottom: 20px;
 }
 
-h5{
+h5 {
     font-family: lato;
     font-weight: bold;
     color: #009dff;
@@ -68,66 +68,74 @@ h5{
     font-size: 20px;
 }
 
-img{
+img {
     display: block;
     border-radius: 10px;
-    
+
     text-align: center;
-    
+
 
 }
 
-p{
+p {
     font-family: lato;
 }
 
-section{
+section {
     padding: 30px 0 60px 0;
     margin-top: 30px;
 }
-    
+
+body{
+    width: 100vw;
+}
+
 
 
 
 /* HEADER
 ===================================================================== */
 
-header{
+header {
     background: linear-gradient(rgb(234, 238, 241), rgb(0, 153, 255));
     background-size: cover;
-    height: 70vh;
+    height: 100vh;
 }
 
-.home-title{
+.home-title {
     position: absolute;
     top: 30px;
 }
 
 
-.home-title h1{
-    font-size:650%;
+.home-title h1 {
+    font-size: 650%;
     color: #fff;
     margin: 20px;
 }
 
-.home-title p{
+.home-title p {
     color: white;
     font-size: 200%;
 }
 
-.btn{
+.bonjour{
+    padding-top: 200px;
+}
+
+.btn {
     display: inline-block;
     padding: 10px 30px;
     text-decoration: none;
     transition: background-color 1s, color 1s, border 1s;
 }
 
-.btn-full{
+.btn-full {
     background-color: #fff;
     margin-right: 15px;
 }
 
-.btn-ghost{
+.btn-ghost {
     border: 1px solid white;
 }
 
@@ -144,57 +152,62 @@ header{
 
 /* COMPETENCES
 ===================================================================== */
-
-.competences img{
+#competences{
+    padding-top: 100px;
+}
+.competences img {
     display: block;
-   min-height: 217px;
-   width: 324px;
-   margin-bottom: 30px;
-   display: block;
-   border-radius: 10px;
-   border: 1px solid #5ea5e0;
-   text-align: center;
-   margin: 0 auto;
-   
-   
+    min-height: 217px;
+    width: 324px;
+    margin-bottom: 30px;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #5ea5e0;
+    text-align: center;
+    margin: 0 auto;
+
+
 }
 
-.competences{
+.competences {
     margin-bottom: 50px;
 }
 
 /* TECHNOLOGIES
 ===================================================================== */
 
-.technologies{
+.technologies {
     background-color: #009dff;
     display: block;
     margin-top: 40px;
-    
+    text-align: center;
+
 }
 
-.technologies h3{
+.technologies h3 {
     color: #fff;
     margin-top: 40px;
 }
 
-.technologies img{
+.technologies img {
     height: 200px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 /* PORTFOLIO
 ===================================================================== */
-.portfolio{
+.portfolio {
     display: block;
-    margin-top: 40px;
+    padding-top: 100px;
     text-align: center;
 }
 
-.portfolio img{
+.portfolio img {
     margin: 10px;
     text-align: center;
-    
+    height: 280px;
+    width: 630px;
     border: 1px solid #009dff;
 }
 
@@ -205,39 +218,162 @@ header{
 /* PROFIL
 ===================================================================== */
 
-.profil{
+.profil {
     background-color: #009dff;
 }
 
-.profil p{
+.profil p {
     font-size: 20px;
     text-align: left;
     color: white;
 }
 
-.profil h3{
+.profil h3 {
     margin-bottom: 40px;
     color: #fff;
 }
 
-.profil h4{
+.profil h4 {
     color: #fff;
+}
+
+#profil{
+    padding-top: 100px;
 }
 
 /* FOOTER
 ===================================================================== */
 
-.footer-icon{
+.footer-icon {
     text-align: center;
-    
+
 }
 
 /* MEDIA QUERIES
 ===================================================================== */
 
-@media screen and (max-width: 767px){
-    .bonjour img{
-        visibility: hidden;
+@media screen and (max-width: 767px) {
+    .bonjour img {
+        visibility: visible;
+        text-align: center;
+    }
+
+    .navbar-toggler{
+        margin-right: 50px;
+    }
+
+    .btn{
+        margin-bottom: 20px;
+    }
+
+    nav{
+        width: 100%;
+        position: fixed;
+    }
+
+    .navbar-expand{
+        position: fixed;
+    }
+
+
+    .portfolio img {
+        text-align: center;
+        width: 90vw;
+        height: auto;
+    }
+
+    .nav {
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%
+    }
+
+    footer {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    .home-title h1{
+        font-size: 50px;
+    }
+    header{
+        width: 110vw;
+        
+    }
+
+    #zone-bleue{
+        width: 100vw;
+    }
+
+    #competences{
+        width: 100vw;
+        
+    }
+
+    .technologies{
+        width: 100vw;
+    }
+
+    #technologies{
+        padding: 10px;
+    }
+
+    .technologies img{
+        width: 300px;
+    }
+
+    .portfolio{
+        margin-right: 10px;
+    }
+
+
+    .profil{
+        width: 100vw;
     }
 }
-    
+
+@media screen and (max-width: 991px){
+
+    .portfolio {
+        text-align: center;
+        height: auto;
+    }
+
+    header{
+        height: 50vh;
+    }
+
+    body{
+        margin-right: 20px;
+    }
+
+    #competences img{
+        margin-left: -35px;
+    }
+
+    #technologies{
+        margin-left: -50px;
+        width: 100vw;
+    }
+
+    .portfolio{
+        width: 100vw;
+        margin-left: -20px;
+    }
+
+    .profil{
+        width: 100vw;
+        margin-right: 40px;
+    }
+
+    .profil p{
+        margin-right: 30px;
+    }
+
+    .footer-icon a{
+        margin-left: -20px;
+    }
+
+
+}
