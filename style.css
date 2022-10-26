@@ -90,7 +90,9 @@ body{
     width: 100vw;
 }
 
-
+#zone-bleue img{
+    width: 600px;
+}
 
 
 /* HEADER
@@ -253,6 +255,10 @@ header {
 ===================================================================== */
 
 @media screen and (max-width: 767px) {
+
+    body{
+        width: 100vw;
+    }
     .bonjour img {
         visibility: visible;
         text-align: center;
@@ -267,7 +273,7 @@ header {
     }
 
     nav{
-        width: 100%;
+        width: 100vw;
         position: fixed;
     }
 
@@ -297,40 +303,53 @@ header {
     .home-title h1{
         font-size: 50px;
     }
+
     header{
-        width: 110vw;
-        
+        width: 100vw;
     }
 
     #zone-bleue{
-        width: 100vw;
+        width: 100%;
+    }
+
+    #zone-bleue img{
+        display: none;
     }
 
     #competences{
         width: 100vw;
-        
+        margin-left: 60px;
     }
 
-    .technologies{
-        width: 100vw;
+    .competences h3, h5 {
+        margin-left: -100px;
+    }
+
+    .competences-img{
+        margin-left: 100px;
     }
 
     #technologies{
-        padding: 10px;
+        width: 110vw;
+        margin-left: 200px;
     }
+
 
     .technologies img{
         width: 300px;
+        margin-left: 200px;
     }
 
-    .portfolio{
-        margin-right: 10px;
+    .portfolio img{
+        margin-left: 25px;
     }
 
 
     .profil{
         width: 100vw;
     }
+
+
 }
 
 @media screen and (max-width: 991px){

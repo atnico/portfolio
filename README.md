@@ -1,2 +1,0 @@
-# kome-waza
-# kome-waza
