@@ -180,9 +180,9 @@ header {
 
 .technologies {
     background-color: #009dff;
-    display: block;
+    display: flex;
     margin-top: 40px;
-    text-align: center;
+    
 
 }
 
@@ -310,6 +310,7 @@ header {
 
     #zone-bleue{
         width: 100%;
+        margin-right: -10px;
     }
 
     #zone-bleue img{
